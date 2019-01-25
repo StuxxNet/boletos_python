@@ -1,0 +1,11 @@
+---
+- name: Criando container do MySQL
+  docker_container:
+    name: mysql
+    image: mysql
+    state: started
+    ports:
+      - "3306:3306"
+    env:
+      MYSQL_ROOT_PASSWORD: "av2f8bv8"
+...

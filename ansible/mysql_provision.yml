@@ -1,0 +1,6 @@
+---
+- name: Garantindo a instalação do Docker
+  hosts: all
+  roles:
+    - docker
+    - mysql

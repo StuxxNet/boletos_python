@@ -1,4 +1,8 @@
 ---
+- name: Checando Docker
+  command: test -e /tmp/docker
+  register: docker
+
 - name: Criando container do MySQL
   docker_container:
     name: mysql
@@ -8,4 +12,5 @@
       - "3306:3306"
     env:
       MYSQL_ROOT_PASSWORD: "av2f8bv8"
+  when: docker.rc == 0
 ...

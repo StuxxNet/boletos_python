@@ -26,4 +26,9 @@
     name: docker-py
     executable: pip
     state: present
+
+- name: Fim da instalação do Docker
+  file:
+    path: /tmp/docker
+    state: touch
 ...

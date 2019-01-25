@@ -6,7 +6,9 @@ O objetivo desta brincadeira é praticar o pouco que aprendi de Python
 fazendo uso do paradigma estruturado de programação afim de gerar
 arquivos de remessa e boletos.
 
-Usarei a biblioteca python-boleto 0.3.6 para esta tarefa.
+Usarei a biblioteca pyboleto para esta tarefa.
+
+Link: https://github.com/eduardocereto/pyboleto
 
 ######################################################################
 IMPLEMENTAÇÕES

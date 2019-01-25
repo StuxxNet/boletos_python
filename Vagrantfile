@@ -7,6 +7,7 @@ Vagrant.configure("2") do |config|
         end
         mysql_config.vm.provision "ansible_local" do |ansible|
             ansible.playbook = "playbooks/docker.yml"
+            ansible.become = true
         end
     end
 end

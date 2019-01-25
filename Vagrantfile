@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
         mysql_config.vm.provider "virtualbox" do |mysql_config_provider|
             mysql_config_provider.memory = 2048
         end
-        mysql_config.vm.provision "ansible_local" do |"ansible"|
+        mysql_config.vm.provision "ansible_local" do |ansible|
             ansible.playbook = "playbooks/docker.yml"
         end
     end
